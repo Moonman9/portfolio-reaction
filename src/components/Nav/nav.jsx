@@ -5,9 +5,9 @@ import { MdEmail } from 'react-icons/md';
 import { BsGithub } from 'react-icons/bs';
 
 
-export default function nav() {
+export default function nav({ openMenu, setOpenMenu }) {
     return (
-        <div className="nav">
+        <div className={"nav " + (openMenu && "evolve")}>
             <div className="wrapper">
                 <div className="left">
                     <a href='#home'>
@@ -32,12 +32,11 @@ export default function nav() {
                     </div>
                 </div>
                 <div className="right">
-                   <div className="menu">
-                       <span className="about"></span>
-                       <span className="skills"></span>
-                       <span className="applications"></span>
-                       <span className="contact"></span>
-                   </div>
+                    <div className="menu" onClick={() => setOpenMenu(!openMenu)}>
+                        <span className="line"></span>
+                        <span className="line"></span>
+                        <span className="line"></span>
+                    </div>
                 </div>
             </div>
         </div>

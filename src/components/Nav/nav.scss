@@ -1,5 +1,6 @@
 * {
-    background-color: black;
+    background-color: #000000;
+    transition: all 1s ease;
 }
 
 .nav {
@@ -8,8 +9,9 @@
     height: 80px;
     position: fixed;
     top: 0;
-    z-index: 2;
+    z-index: 3;
     border-radius: 2.5px;
+    transition: all 1s ease;
 
     .wrapper {
         display: flex;
@@ -17,27 +19,32 @@
         padding: 15px 30px;
         align-items: center;
         justify-content: space-between;
+        transition: all 1s ease;
 
         .left {
             background-color: #000000;
             display: flex;
             align-items: center;
+            transition: all 1s ease;
 
             a {
                 margin-right: 30px;
                 background-color: #000000;
                 text-decoration: none;
                 color: #c9ae5d;
+                transition: all 1s ease;
 
                 .astronaut {
                     background-color: #000000;
                     font-size: 22px;
+                    transition: all 1s ease;
 
                 }
                 .moonman {
                     background-color: #000000;
                     font-size: 40px;
                     font-weight: 600;
+                    transition: all 1s ease;
                 }
             }
             .resources {
@@ -45,31 +52,113 @@
                 display: flex;
                 align-items: center;
                 margin: 20px;
+                transition: all 1s ease;
+
                 a {
                     display: flex;
                     align-items: center;
                     margin: 0px;
                     color: #ffffff;
+                    transition: all 1s ease;
+
+                    &:hover {
+                        color: #d80000;
+                    }
                 }
             }
         }
-        .rigth {
-            background-color: #000000;
-            
-            .menu {
-                width: 35px;
-                height: 25px;
+        .right {
+           
+            .menu{
+                cursor: pointer;
+                width: 20px;
+                height: 15px;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+                background-color: #000000;
 
-                span{
+                span {
                     width: 100%;
-                    height: 3px;
+                    height: 1px;
                     background-color: #c9ae5d;
+                    transform-origin: left;
+                    transition: all 2s ease;
+                }
+            }
+        }
+
+    }
+
+    &.evolve{
+       background-color: #2364aa; 
+
+       * {
+           background-color: #2364aa;
+       }
+
+       .wrapper {
+        display: flex;
+        background-color: #2364aa;
+        padding: 15px 30px;
+        align-items: center;
+        justify-content: space-between;
+
+            .left {
+                background-color: #2364aa;
+                display: flex;
+                align-items: center;
+
+                a {
+                    margin-right: 30px;
+                    background-color: #2364aa;
+                    text-decoration: none;
+                    color: #c9ae5d;
+
+                    .astronaut {
+                        background-color: #2364aa;
+                        font-size: 22px;
+
+                    }
+                    .moonman {
+                        background-color: #2364aa;
+                        font-size: 40px;
+                        font-weight: 600;
+                    }
+                }
+                .resources {
+                    background-color: #2364aa;
+
+
+                    a {
+                        display: flex;
+                        align-items: center;
+                        margin: 0px;
+                        color: #ffffff;
+
+                    }
+                }
+            }
+            .right{
+                .menu{
+                    background-color: #2364aa;
+                }
+            }
+        }
+        .menu {
+            span {
+                &:first-child {
+                    background-color: #d80000;
+                    transform: rotate(45deg);
+                }
+                &:nth-child(2) {
+                    opacity: 0;
+                }
+                &:last-child {
+                    background-color: #d80000;
+                    transform: rotate(-45deg);
                 }
             }
         }
     }
-
 }
