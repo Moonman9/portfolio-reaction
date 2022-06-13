@@ -26,7 +26,7 @@ export default function nav({ openMenu, setOpenMenu }) {
                         </a>
                     </div>
                     <div className="resources">
-                        <a href="../../../public/Resume/Zlop-resume.docx" print>
+                        <a href="Resume/Zlop-resume.docx" print>
                             <AiFillFileWord />
                         </a>
                     </div>
