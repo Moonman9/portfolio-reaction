@@ -2,8 +2,8 @@ import Nav from "./components/Nav/nav";
 import Content from "./components/Content/content";
 import Home from "./components/Home/home";
 import About from "./components/About/about";
-import Skills from "./components/Skills/skills";
 import Applications from "./components/Applications/applications";
+import Skills from "./components/Skills/skills"
 import Contact from "./components/Contact/contact";
 import Footer from "./components/Footer/footer";
 import { useState } from "react";

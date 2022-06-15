@@ -1,9 +1,8 @@
 import "./skills.scss"
 
-export default function skills() {
+export default function Skills() {
     return (
         <div className="skills" id="skills">
-            I got skills!
         </div>
     )
 }

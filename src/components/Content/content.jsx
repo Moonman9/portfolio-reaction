@@ -16,9 +16,6 @@ export default function content({ openMenu, setOpenMenu }) {
                     <a href="#about"><BsQuestionSquareFill className="icon" /> about</a>
                 </li>
                 <li onClick={() => setOpenMenu(false)}>
-                    <a href="#skills"><GiSkills className="icon" /> skills</a>
-                </li>
-                <li onClick={() => setOpenMenu(false)}>
                     <a href="#applications"><AiFillAppstore className="icon" /> apps</a>
                 </li>
                 <li onClick={() => setOpenMenu(false)}>
